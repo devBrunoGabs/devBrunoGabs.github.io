@@ -1,0 +1,304 @@
+        body {
+            font-family: "Noto Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+			background-color: #f8f9fa 
+        }
+        .navbar {
+            background-color: rgba(248, 249, 250, 0.8); /* Navbar com transparência */
+            border-bottom: 1px solid #ddd;
+            backdrop-filter: blur(10px); /* Efeito de desfoque */
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Centraliza o conteúdo da navbar */
+            align-items: center;
+            position: relative; /* Para o posicionamento absoluto do texto */
+        }
+        .navbar-inner {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px; /* Limita a largura máxima da navbar */
+            padding: 0 20px; /* Adiciona padding para espaçamento lateral */
+            box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+            position: relative;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: #007bff;
+        }
+        .navbar-brand img {
+            max-height: 24px;
+        }
+
+        .navbar-text {
+			font-size: 25px;
+            font-weight: bold;
+            color: #000000;
+            text-align: center;
+            margin-left: 285px; /* Centraliza horizontalmente */
+        }
+		
+		/* Estilos para telas maiores */
+		.navbar-toggler {
+			display: none;
+		}
+
+        .banner img {
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 60%;
+            height: auto; /* Ajusta a altura automaticamente com base na largura */
+            display: block; /* Remove o espaço em branco ao redor da imagem */
+        }
+
+		.label-container {
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		  margin-bottom: 5px;
+		}
+
+		.label-titulo {
+		  font-size: 16px;
+		  font-weight: bold;
+		  color: #333;
+		}
+
+		.label-obs {
+		  font-size: 12px;
+		  color: #777;
+		  margin-left: 10px;
+		}
+
+		/* Responsividade para telas menores */
+		@media (max-width: 768px) {
+			.navbar-inner {
+        		flex-direction: column;
+			}
+
+			.navbar-text {
+				font-size: 30px;
+				margin-top: 10px;
+				margin-right: 285px;
+			}
+
+			.navbar-brand img {
+				max-height: 70px;
+				margin-left: 25px;
+			}
+			
+			.mode-toggle {
+				margin-bottom: 10px;
+			}
+		}
+
+        .mode-toggle {
+            cursor: pointer;
+            font-size: 20px;
+            color: #0084ff;
+            margin-left: auto; /* Move o botão para o lado direito */
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer .social-icons i {
+            font-size: 24px;
+            color: #0084ff;
+            margin: 0 10px;
+        }
+        .footer .footer-logo img {
+            max-height: 40px;
+            margin-top: 10px;
+        }
+		.form-container {
+            flex: 1; /* Permite que o contêiner ocupe o espaço disponível */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px; /* Adiciona espaçamento interno */
+        }
+        .form-header {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .form-box {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 800px;
+        }
+        .form-row {
+            margin-bottom: 15px;
+        }
+        .form-row label {
+            margin-bottom: 5px;
+        }
+        .form-box input, .form-box textarea {
+            width: 100%;
+        }
+        .form-box .form-group {
+            margin-bottom: 0;
+        }
+		
+        .option-container {
+            flex: 1; /* Permite que o contêiner ocupe o espaço disponível */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px; /* Adiciona espaçamento interno */
+        }
+        .option-header {
+            margin-bottom: 20px; /* Ajuste o espaçamento para evitar sobreposição */
+            font-size: 24px;
+            text-align: center;
+        }
+        .option-boxes {
+            display: flex;
+            flex-wrap: wrap; /* Garante que os boxes se ajustem em telas menores */
+            justify-content: center;
+        }
+        .option-box {
+            position: relative;
+            background-color: #f8f9fa;
+            padding: 40px 20px; /* Reduzido para responsividade */
+            text-align: center;
+            margin: 10px; /* Ajustado para responsividade */
+            width: 250px;
+            height: 350px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none; /* Remove sublinhado */
+            color: inherit; /* Herda a cor do texto */
+			cursor: pointer;
+        }
+        .option-box:hover {
+            transform: scale(1.1);
+			text-decoration: none; /* Remove sublinhado */
+            color: inherit; /* Herda a cor do texto */
+			cursor: pointer;
+        }
+        .option-icon {
+            font-size: 60px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+		.option-back {
+			position: relative;
+			font-size: 40px;
+            color: #007bff;
+			margin-top: 40px;
+			cursor: pointer;
+		}
+        .option-box div {
+            margin-top: 10px; /* Espaçamento entre o ícone e o texto */
+        }
+		.download-buttons {
+			display: flex;
+			justify-content: center;
+        	gap: 10px;
+			margin-top: 20px;
+		}
+
+        /* Dark mode styles */
+        .dark-mode {
+            background-color: #333;
+            color: #f8f9fa;
+        }
+        .dark-mode .navbar {
+            background-color: rgba(0, 0, 0, 0.8); /* Navbar escura */
+            border-bottom: 1px solid #444;
+        }
+		.dark-mode .navbar-text {
+			color: #f8f9fa;
+		}
+		.dark-mode .label-titulo {
+			color: #f8f9fa;
+		}
+
+        .dark-mode .footer {
+            background-color: #222;
+            border-top: 1px solid #444;
+        }
+        .dark-mode .option-box {
+            background-color: #444;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+        .dark-mode .option-icon {
+            color: #007bff;
+        }
+		.dark-mode .form-box {
+            background-color: #444;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+        .dark-mode .form-box input, 
+        .dark-mode .form-box textarea {
+            background-color: #555;
+            color: #f8f9fa;
+            border: 1px solid #666;
+        }
+        .dark-mode .form-box input::placeholder,
+        .dark-mode .form-box textarea::placeholder {
+            color: #ccc;
+        }
+
+        /* Estilização do botão de upload */
+        #upload-label {
+            display: inline-block;
+            background-color: #0b7719;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        #upload-label:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Estilização do botão de gerar imagens */
+        #generate-images {
+            display: inline-block;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        #generate-images:hover {
+            background-color: #218838;
+        }
+        
+        /* Ícones alinhados ao texto */
+        #upload-label i, #generate-images i {
+            margin-right: 8px;
+        }
+  
