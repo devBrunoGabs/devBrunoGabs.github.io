@@ -135,14 +135,14 @@
         }
         .form-box {
             background-color: #f8f9fa;
-            padding: 30px;
+            padding: 40px;
             border-radius: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             width: 100%;
-            max-width: 800px;
+            max-width: 1000px;
         }
         .form-row {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         .form-row label {
             margin-bottom: 5px;

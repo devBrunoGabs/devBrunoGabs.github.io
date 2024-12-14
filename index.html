@@ -31,110 +31,49 @@
 		</div>
 		<div class="form-box">
 			<form id="nomesForm">
-				<div class="form-row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<div class="label-container">
-								<span class="label-titulo">NOME:</span>
-								<span class="label-obs">*Obrigatório</span>
+				<div id="dynamic-fields-container">
+					<div class="form-row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<div class="label-container">
+									<span class="label-titulo">NOME:</span>
+									<span class="label-obs">*Obrigatório</span>
+								</div>
+								<input type="text" class="form-control" name="nome[]" required placeholder="Digite o nome do ganhador">
 							</div>
-							<input type="text" class="form-control" id="nome" required placeholder="Digite o nome do ganhador">
 						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<div class="label-container">
-								<span class="label-titulo">PRÊMIO:</span>
-								<span class="label-obs">*Obrigatório</span>
+						<div class="col-md-4">
+							<div class="form-group">
+								<div class="label-container">
+									<span class="label-titulo">DEPARTAMENTO:</span>
+									<span class="label-obs">*Obrigatório</span>
+								</div>
+								<input type="text" class="form-control" name="departamento[]" required placeholder="Digite o departamento">
 							</div>
-							<input type="text" class="form-control" id="premio" required placeholder="Digite o prêmio">
 						</div>
-					</div>
-				</div>
-				<div class="form-row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<div class="label-container">
-								<span class="label-titulo">NOME:</span>
+						<div class="col-md-4">
+							<div class="form-group">
+								<div class="label-container">
+									<span class="label-titulo">PRÊMIO:</span>
+									<span class="label-obs">*Obrigatório</span>
+								</div>
+								<input type="text" class="form-control" name="premio[]" required placeholder="Digite o prêmio">
 							</div>
-							<input type="text" class="form-control" id="nome2" placeholder="Digite o nome do ganhador">
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<div class="label-container">
-								<span class="label-titulo">PRÊMIO:</span>
-							</div>
-							<input type="text" class="form-control" id="premio2" placeholder="Digite o prêmio">
 						</div>
 					</div>
 				</div>
-				<div class="form-row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<div class="label-container">
-								<span class="label-titulo">NOME:</span>
-							</div>
-							<input type="text" class="form-control" id="nome3" placeholder="Digite o nome do ganhador">
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<div class="label-container">
-								<span class="label-titulo">PRÊMIO:</span>
-							</div>
-							<input type="text" class="form-control" id="premio3" placeholder="Digite o prêmio">
-						</div>
-					</div>
-				</div>
-				<div class="form-row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<div class="label-container">
-								<span class="label-titulo">NOME:</span>
-							</div>
-							<input type="text" class="form-control" id="nome4" placeholder="Digite o nome do ganhador">
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<div class="label-container">
-								<span class="label-titulo">PRÊMIO:</span>
-							</div>
-							<input type="text" class="form-control" id="premio4" placeholder="Digite o prêmio">
-						</div>
-					</div>
-				</div>
-				<div class="form-row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<div class="label-container">
-								<span class="label-titulo">NOME:</span>
-							</div>
-							<input type="text" class="form-control" id="nome5" placeholder="Digite o nome do ganhador">
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<div class="label-container">
-								<span class="label-titulo">PRÊMIO:</span>
-							</div>
-							<input type="text" class="form-control" id="premio5" placeholder="Digite o prêmio">
-						</div>
-					</div>
-				</div>
-
+				<button type="button" id="add-field-btn" class="btn btn-secondary">Adicionar Mais Campos</button>
 				<button type="submit" class="btn btn-primary">Gerar Imagem</button>
-				<br/>
-				<br/>
+				<br />
+				<br />
 			</form>
 			<canvas id="canvas" width="800" height="600" style="display:none;"></canvas>
 			<div class="download-buttons">
 				<a id="downloadJPGForm" class="btn btn-secondary" style="display:none;" download="imagem_gerada.jpg">Baixar JPG</a>
 			</div>
-
 		</div>
 	</div>
+	
 
 	<div class="container form-container">
 		<div class="form-header">
