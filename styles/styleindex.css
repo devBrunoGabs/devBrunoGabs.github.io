@@ -301,4 +301,30 @@
         #upload-label i, #generate-images i {
             margin-right: 8px;
         }
+
+		#download-buttons-container {
+			display: flex;
+			flex-wrap: wrap; /* Permite a quebra de linha */
+			gap: 10px; /* Espaçamento entre os botões */
+			margin-top: 10px; /* Espaço acima do grupo de botões */
+		}
+
+		#download-buttons-container a {
+			flex: 1 1 calc(10% - 10px); /* Botões ocupam 10% da largura */
+			text-align: center;
+			padding: 8px 12px;
+			background-color: #6c757d; /* Cor do botão (classe btn-secondary) */
+			color: white;
+			border-radius: 4px;
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			box-sizing: border-box;
+			font-size: 14px;
+		}
+
+		#download-buttons-container a:hover {
+			background-color: #5a6268; /* Cor ao passar o mouse */
+		}
   

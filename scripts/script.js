@@ -214,11 +214,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (nome && departamento && premio) {
 
-                    if (nome.length > 23) {
+                    if (nome.length > 26) {
                         drawRoundedRect(xNome, yNome, 550, 80, 20);
                         ctx.font = 'bold 28px "Noto Sans", sans-serif';
                         ctx.fillStyle = '#14179a';
-                        wrapText(nome, xNome + 15, yNome + 34, 520, 30);
+                        wrapText(nome, xNome + 15, yNome + 34, 400, 30);
                     } else {
                         drawRoundedRect(xNome, yNome, 550, 80, 20);
                         ctx.font = 'bold 32px "Noto Sans", sans-serif';
@@ -298,11 +298,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 numberLabel.style.fontSize = '18px';  // Tamanho do número
 
                 // Ajustando o tamanho do botão
-                downloadButton.style.display = 'inline-flex';
-                downloadButton.style.alignItems = 'center';
-                downloadButton.style.padding = '8px 12px';  // Botão mais compacto
-                downloadButton.style.fontSize = '14px';  // Tamanho pequeno para o texto
-                downloadButton.classList.add('btn', 'btn-secondary'); // Classe para botão estilizado
+                //downloadButton.style.display = 'inline-flex';
+                //downloadButton.style.alignItems = 'center';
+                //downloadButton.style.padding = '8px 12px';  // Botão mais compacto
+                //downloadButton.style.fontSize = '14px';  // Tamanho pequeno para o texto
+                //downloadButton.classList.add('btn', 'btn-secondary'); // Classe para botão estilizado
 
                 // Adicionando o ícone e o número
                 downloadButton.appendChild(icon);
